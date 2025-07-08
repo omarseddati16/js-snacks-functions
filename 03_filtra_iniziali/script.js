@@ -7,18 +7,20 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 function filter(stringarrey, letter) {
   const res = []
+  let startsWithA = filter(names, "A");
   for (let i = 0; i < stringarrey.length; i++) {
     if (stringarrey[i].startsWith(letter)) res.push(stringarrey[i])
   }
   return res
+
 }
 
-let startsWithA = filter(names, "A");
+
 
 
 
 // Invoca la funzione qui e stampa il risultato in console
 
-console.log(startsWithA)
+console.log(filter)
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
